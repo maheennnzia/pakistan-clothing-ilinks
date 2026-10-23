@@ -1,37 +1,292 @@
 
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pakistani Clothing Brands | Fashion & Style Guide 2026</title>
+    <title>Pakistani Clothing Brands | Fashion Guide</title>
 
-    <meta name="description" content="Explore popular Pakistani clothing brands including Khaadi, Sapphire, and Gul Ahmed. Find official websites and discover clothing collections, styles, and fashion ideas.">
-<meta name="google-site-verification" content="rW23fNv7KU8_y5IPUDiSB4ag4z1naqrgv8tlBS0cKfc" />
+    <meta name="description" content="Explore popular Pakistani clothing brands including Khaadi, Sapphire, and Gul Ahmed. Discover elegant styles, traditional outfits, and fashion collections.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fcf9f6;
+            color: #263f3d;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid #eee4df;
+        }
+
+        header h2 {
+            color: #284b49;
+            font-family: Georgia, serif;
+        }
+
+        nav a {
+            color: #284b49;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b86d75;
+        }
+
+        .hero {
+            padding: 75px 8%;
+            background: #f3e8e2;
+            text-align: center;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 12px auto 25px;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, serif;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            color: #244744;
+            line-height: 1.2;
+        }
+
+        .button {
+            display: inline-block;
+            background: #b86d75;
+            color: white;
+            padding: 11px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #95535b;
+        }
+
+        .brands {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .section-intro {
+            margin: 10px auto 30px;
+            max-width: 650px;
+            color: #62716e;
+        }
+
+        .brand-container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            text-align: left;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #eee5df;
+            border-radius: 12px;
+            padding: 26px;
+            box-shadow: 0 5px 18px rgba(40, 60, 55, 0.06);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #62716e;
+            margin-bottom: 20px;
+        }
+
+        .card .button {
+            font-size: 14px;
+            padding: 10px 14px;
+        }
+
+        .fashion {
+            background: #f4ece7;
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .fashion p {
+            max-width: 700px;
+            margin: 12px auto;
+        }
+
+        .fashion img {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin: 25px auto 0;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #284744;
+            color: white;
+            padding: 25px 8%;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 4px 8px;
+            }
+
+            .brand-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 50px 6%;
+            }
+
+            .brands {
+                padding: 40px 6%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Pakistani Clothing Brands</h1>
+    <header>
+        <h2>Pakistani Clothing Brands</h2>
 
-    <p>Explore popular Pakistani fashion brands and their clothing collections.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#brands">Brands</a>
+            <a href="#fashion">Fashion Guide</a>
+        </nav>
+    </header>
 
-    <h2>Khaadi</h2>
-    <p>Explore traditional and modern Pakistani clothing at Khaadi.</p>
-    <a href="https://pk.khaadi.com/">Khaadi Official Clothing Collection</a>
+    <section class="hero" id="home">
+        <h1>Pakistani Clothing Brands</h1>
 
-    <h2>Sapphire</h2>
-    <p>Discover clothing, seasonal collections, and fashion styles at Sapphire.</p>
-    <a href="https://pk.sapphireonline.pk/">Sapphire Official Fashion Collection</a>
+        <p>
+            Tradition, style and elegance.
+            Explore popular Pakistani fashion brands
+            and discover clothing collections for every style.
+        </p>
 
-    <h2>Gul Ahmed</h2>
-    <p>Find Pakistani clothing and fabric collections at Gul Ahmed.</p>
-    <a href="https://www.gulahmedshop.com/">Gul Ahmed Official Clothing Collection</a>
+        <a href="#brands" class="button">Discover Brands</a>
+    </section>
 
-    <h2>Pakistani Fashion</h2>
-    <img src="fashion.jpg" alt="Pakistani traditional clothing and fashion designs" width="300">
+    <section class="brands" id="brands">
+        <h2>Popular Pakistani Clothing Brands</h2>
+
+        <p class="section-intro">
+            Explore official websites and discover clothing,
+            seasonal collections and fashion inspiration.
+        </p>
+
+        <div class="brand-container">
+
+            <article class="card">
+                <h3>Khaadi</h3>
+
+                <p>
+                    Explore traditional and modern Pakistani
+                    clothing at Khaadi.
+                </p>
+
+                <a class="button"
+                   href="https://pk.khaadi.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit Khaadi
+                </a>
+            </article>
+
+            <article class="card">
+                <h3>Sapphire</h3>
+
+                <p>
+                    Discover clothing, seasonal collections
+                    and contemporary fashion styles.
+                </p>
+
+                <a class="button"
+                   href="https://pk.sapphireonline.pk/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit Sapphire
+                </a>
+            </article>
+
+            <article class="card">
+                <h3>Gul Ahmed</h3>
+
+                <p>
+                    Find Pakistani clothing and fabric
+                    collections at Gul Ahmed.
+                </p>
+
+                <a class="button"
+                   href="https://www.gulahmedshop.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit Gul Ahmed
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="fashion" id="fashion">
+        <h2>Discover Pakistani Fashion</h2>
+
+        <p>
+            From timeless traditional designs to modern
+            everyday outfits, Pakistani fashion celebrates
+            culture, creativity and personal style.
+        </p>
+
+        <img
+            src="fashion.jpg"
+            alt="Pakistani traditional clothing and fashion designs">
+    </section>
+
+    <footer>
+        <p>Pakistani Clothing Brands</p>
+        <p>Celebrate Tradition | Explore Style | Wear Culture</p>
+    </footer>
 
 </body>
 </html>
